@@ -1,0 +1,5 @@
+#!/usr/bim/perl
+
+use Cow;
+
+cow::speak;
