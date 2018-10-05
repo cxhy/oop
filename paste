@@ -1,9 +1,17 @@
 #!/usr/bin/perl
-
 use Cow;
 use Horse;
 use Sheep;
 
-Cow::speak;
-Horse::speak;
-Sheep::speak;
+my @arr = qw(Cow Cow Horse Horse Sheep);
+
+foreach (@arr){
+    $_->speak;
+}
+
+#Cow::speak;
+#Horse::speak;
+#Sheep::speak;
+
+
+

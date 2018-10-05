@@ -1,7 +1,10 @@
 package Cow;
 
+sub sound(){ 'mooooo' }
+
 sub speak(){
-    print "a Cow goes a mooooo\n";
+    my $class = shift;
+    print "a $class goes a ",$class->speak,"!\n";
 }
 package speak;
 1
