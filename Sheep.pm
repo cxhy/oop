@@ -1,7 +1,10 @@
 package Sheep;
+use parent qw(Animal);
 
-sub speak(){
-    print "a Cow goes a baaaaah\n";
-}
+
+sub sound {'baaaaah'};
+# sub speak(){
+#     print "a  goes a baaaaah\n";
+# }
 package speak;
 1

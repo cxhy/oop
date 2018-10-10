@@ -1,14 +1,20 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -w
 use Cow;
 use Horse;
 use Sheep;
+use Mouse;
+use strict;
 
-my @arr = qw(Cow Cow Horse Horse Sheep);
+my @arr = qw(Cow Cow Horse Horse Sheep Mouse);
 
-foreach (@arr){
-    $_->speak;
+ Cow->speak;
+# Cow->speak;
+# Horse->speak;
+# Sheep->speak;
+foreach my $xx (@arr){
+    $xx->speak;
+#     print "$xx\n";
 }
-
 #Cow::speak;
 #Horse::speak;
 #Sheep::speak;

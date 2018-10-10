@@ -1,8 +1,9 @@
 package Horse;
-
-sub speak(){
-    print "a Cow goes a neigh\n";
-}
+use parent qw(Animal);
+sub sound{'neigh'}
+# sub speak{
+#     print "a Horse goes a neigh\n";
+# }
 package speak;
 1
 
