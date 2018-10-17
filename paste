@@ -7,14 +7,18 @@ use strict;
 
 my @arr = qw(Cow Cow Horse Horse Sheep Mouse);
 
- Cow->speak;
+my $tv_horse = Horse->named('Mr.Ed');
+$tv_horse->speak;
+
+
+#Cow->speak;
 # Cow->speak;
 # Horse->speak;
 # Sheep->speak;
-foreach my $xx (@arr){
-    $xx->speak;
-#     print "$xx\n";
-}
+ #foreach my $xx (@arr){
+ #    $xx->speak;
+ ##     print "$xx\n";
+ #}
 #Cow::speak;
 #Horse::speak;
 #Sheep::speak;
