@@ -1,19 +1,18 @@
 package Animal;
 #use parent qw(LivingCreature);
-sub name {
-    my $self = shift;
-    $$self;
+sub name{
+    my $either = shift;
+    ref $either ? $$either : "an unnamed $either";
 }
 
 sub named{
-    my $class = shift;
-    my $name = shift;
+    my ($class, $name) = @_;
     bless \$name, $class;
 }
 
  sub speak{
-     my $class = shift;
-     print "a $class goes ",$class->sound,"!\n";
+     my $either = shift;
+     print $either->name,' goes ',$either->sound,"\n"; 
  }
 
 sub sound{
